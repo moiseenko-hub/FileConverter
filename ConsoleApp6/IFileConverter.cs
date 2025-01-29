@@ -2,5 +2,5 @@ namespace ConsoleApp6;
 
 public interface IFileConverter
 {
-    public static abstract void Convert<T>(string inputPath, string outputPath);
+    public static abstract void Convert<T>(string inputPath);
 }

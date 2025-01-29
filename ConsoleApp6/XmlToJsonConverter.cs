@@ -5,11 +5,13 @@ namespace ConsoleApp6;
 
 public class XmlToJsonConverter : IFileConverter
 {
-    public static void Convert<T>(string inputPath, string outputPath)
+    public static void Convert<T>(string inputPath)
     {
+        /*
         var xmlSerializer = new XmlSerializer(typeof(T));
         using Stream reader = new FileStream(inputPath, FileMode.Open);
         var result = (T)xmlSerializer.Deserialize(reader)!;
         File.WriteAllText(outputPath, JsonSerializer.Serialize(result));
+        */
     }
 }

@@ -7,7 +7,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        //JsonToXmlConverter.Convert<User>("app.json", "../result.xml");
-        XmlToJsonConverter.Convert<User>("../result.xml","app.json");
+        JsonToXmlConverter.Convert<Squad>("/Users/andrejmoiseenko/RiderProjects/ConsoleApp6/ConsoleApp6/bin/Debug/net9.0/superhero");
+        //XmlToJsonConverter.Convert<User>("../result.xml","app");
+
+        foreach (var item in Directory.GetFiles(Environment.CurrentDirectory))
+        {
+            Console.WriteLine(item);
+        }
     }
 }
